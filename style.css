@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif !important;
+}
+
+body {
+  font-family: "Nunito", sans-serif !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #222;
+  background: url("landscape.jpg");
+  background-size: cover;
+  font-size: 120%;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.75rem;
+}
+.card {
+  background: rgba(3, 3, 3, 0.8);
+  color: aliceblue;
+  padding: 1rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 300px;
+  margin: 1vw;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5rem;
+  border-radius: 50%;
+  min-width: 2.25rem;
+  border: none;
+  height: 2.5rem;
+  /* width: 2.5rem; */
+  outline: none;
+  background: rgba(225, 225, 225, 0.3);
+  color: #222;
+}
+
+button:hover {
+  background: rgba(225, 225, 225, 0.6);
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 16px;
+  background-color: rgba(78, 115, 153, 0.4);
+  color: whitesmoke;
+  font-family: inherit;
+  font-size: 1.2rem;
+  width: calc(100% - 3rem);
+  font-size: 105%;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 0.5vw;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 25px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 2vw;
+}
